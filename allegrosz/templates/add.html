@@ -1,0 +1,23 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    {{ form.title.label }}
+    {{ form.title (class="form-control", placeholder="Title") }}<br>
+    {{ form.price.label }}
+    {{ form.price (class="form-control", placeholder="Price") }}<br>
+    {{ form.description.label }}
+    {{ form.description (class="form-control", placeholder="Description") }}<br>
+    {{ form.image.label }}
+    {{ form.image (class="form-control", placeholder="Image") }}<br>
+    {{ form.category.label }}
+    {{ form.category (class="form-control", placeholder="Category") }}<br>
+    {{ form.subcategory.label }}
+    {{ form.subcategory (class="form-control", placeholder="Subcategory") }}<br>
+    {{ form.submit }}<br>
+
+</form>
+
+{% endblock %}

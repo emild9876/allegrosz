@@ -1,9 +1,9 @@
 from flask import Blueprint, render_template
 
-from allegrosz.dbs.db_init import conn
 from allegrosz.dbs.dbs import get_db
 
 bp_main = Blueprint('main', __name__, url_prefix='/')
+
 
 @bp_main.route('/')
 def index():
